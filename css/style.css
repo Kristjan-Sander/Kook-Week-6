@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 2;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, #ffffffa9, #29282877) , url('../img/pexels-photo-1702373.webp');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: beige;
+    text-shadow: 0 0 3px rgb(13, 14, 11), 0 0 5px #ff0095;
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: moveinleft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveinleft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.3rem;
+    animation-name: moveinright;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveinright {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid #ff0095;
+    color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff00952c;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px); 
+}
+
+.main {
+    background-color: #8a5e78;
+    height: 800px;
+    margin-top: -5rem;
+    text-align: center;
+    padding-top: 5rem;
+    clip-path: polygon(50% 10%, 100% 0, 100% 37%, 100% 83%, 68% 100%, 32% 100%, 0 100%, 0 42%, 0 0);
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px rgb(13, 14, 11), 0 0 5px #ff0095;
+}
+
+.gallery { 
+    height: 100%;
+    margin: 0   auto;
+    position: relative;
+    width: 75%;
+    
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    outline-offset: 1rem;
+    position: absolute;
+    width: 400px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgba(255, 192, 203, 0.301);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-1 {
+    left: 5%;
+    top: 0%;
+    width: 350px;
+    
+}
+.gallery_photo-2 {
+    top: 30%;
+}
+
+.gallery_photo-3 {
+    left: 25%;
+    top: 10%;
+    width: 450px;
+}
+
+.footer {
+    color: #cbc5af;
+    font-size: 2rem;
+    height: 25vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: #cbc5af;
+    text-decoration: none;
+}
+
+.footer ul li:hover,  .footer ul li a:hover{
+    color: rgb(10, 2, 116);
+    transform: scale(1.2);
+}
